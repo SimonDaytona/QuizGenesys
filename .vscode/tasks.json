@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "mvn -B clean install",
+            "group": "build"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "cd 'C:/Users/SimonVigoureux/Documents/VisualStudioCode/Maven/QuizSimon-1.2/target'; & java -jar ./QuizSimon-1.2-SNAPSHOT.jar",
+            "group": "test"
+        }
+    ]
+}

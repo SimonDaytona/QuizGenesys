@@ -1,0 +1,206 @@
+Question;nbreReponses;A;B;C;D;Theme;Formation
+Which type of Genesys installation does not exists ?;1;Single-Tenant;Single-Site;Multi-Site;Multi-Tenant;Configuration Layer;Framework 8.5 Routing & Reporting
+A tenant is a single corporate entity with its own business goals, agents, strategies, switch configuration, etc.;1;True;False;;;Configuration Layer;Framework 8.5 Routing & Reporting
+If the config database is no longer accessible the Config Server go to Emergency mode ?;1;False;True;;;Configuration Layer;Framework 8.5 Routing & Reporting
+You can use both interfaces GA and GAX in an implementation;1;True;False;;;Configuration Layer;Framework 8.5 Routing & Reporting
+You can change your password using GAX;1;True;False;;;Configuration Layer;Framework 8.5 Routing & Reporting
+The Agent Management option is turned on under System Preferences in GAX;1;True;False;;;Configuration Layer;Framework 8.5 Routing & Reporting
+Which of the following object is not configured in GAX ?;1;Agent computers;Agent groups;Skills;Persons;Configuration Layer;Framework 8.5 Routing & Reporting
+Which of the following Genesys configuration object represent an agent's desk with a phone and computer ?;1;Place;DN;Extension;Skill;Configuration Layer;Framework 8.5 Routing & Reporting
+Which view in GAX show when a host goes down ?;1;Host View;Application View;Dashboard;Solution View;Configuration Layer;Framework 8.5 Routing & Reporting
+Which view allows to start a server application ?;1;Application view;Host view;Dashboard;Solution view;Configuration Layer;Framework 8.5 Routing & Reporting
+Which view shows applications status and alarms ?;1;Dashboard;Host view;Application view;Solution view;Configuration Layer;Framework 8.5 Routing & Reporting
+Which view provides more informations on an issue ?;1;Centralized log;Solution view;dashboard;Application view;Configuration Layer;Framework 8.5 Routing & Reporting
+Which view allows to check solution status ?;1;Solution view;Dashboard;Application view;Host view;Configuration Layer;Framework 8.5 Routing & Reporting
+Which layer centralized configuration, access control, dynamic reconfiguration and notifications ?;1;Configuration Layer;Media Layer;Services Layer;Management Layer;Configuration Layer;Framework 8.5 Routing & Reporting
+Configuration Layer is made of Configuration Databse and Configuration User Interface;1;False;True;;;Configuration Layer;Framework 8.5 Routing & Reporting
+The process of Configuration Server loading all the configuration data into its memory is called initialization;1;True;False;;;Configuration Layer;Framework 8.5 Routing & Reporting
+Who is a central repository for all configuration data ?;1;Configuration Database;Configuration Server;confserv.cfg;Configuration Server Proxy;Configuration Layer;Framework 8.5 Routing & Reporting
+Who provides centralized access to configuration data ?;1;Configuration Server;Configuration Database;confserv.cfg;Configuration Server Proxy;Configuration Layer;Framework 8.5 Routing & Reporting
+During startup, Configuration Server reads this for information about how to access configuration data;1;confserv.cfg;Configuration Server Proxy;Configuration Server;Configuration Database;Configuration Layer;Framework 8.5 Routing & Reporting
+What gives remote, distributed clients reliable connection to the Configuration Layer?;1;Configuration Server Proxy;Configuration Database;Configuration Server;Configuration Layer;Configuration Layer;Framework 8.5 Routing & Reporting
+Who stores configured information about the Genesys environment ?;1;Configuration Database;Configuration Server;confserv.cfg;Configuration Server Proxy;Configuration Layer;Framework 8.5 Routing & Reporting
+Which component loads and maintains all configuration data in active memory ?;1;Configuration Server;confserv.cfg;Configuration Server Proxy;Configuration Layer;Configuration Layer;Framework 8.5 Routing & Reporting
+What is the general guideline for sizing the configuration database for the size of a configured object ?;1;10 kb;5 kb;50 kb;100 kb;Configuration Layer;Framework 8.5 Routing & Reporting
+eServices does not support the use of customer data to personalize interactions.;1;False;True;;;eServices 8.5;eServices 8.5
+The DAP type used by UCS is JDBC;1;True;False;;;eServices 8.5;eServices 8.5
+Content Analyzer license is essential to run the Email Server;1;False;True;;;eServices 8.5;eServices 8.5
+Social Messaging Server is not part of eServices Media Interface;1;False;True;;;eServices 8.5;eServices 8.5
+Chat Server, Interaction Server, UCS and Web API server can be shared across tenant in a multi-tenant configuration;1;True;False;;;eServices 8.5;eServices 8.5
+Hot-standby high-availability is not supported with eServices, as interaction data which is in use is always stored in a database;1;True;False;;;eServices 8.5;eServices 8.5
+For e-mail, you can use the same mailbox address for more than one POP client;1;False;True;;;eServices 8.5;eServices 8.5
+An Interaction Process Diagram plots an overall path for interactions;1;True;False;;;eServices 8.5;eServices 8.5
+Licensing is required per eServices Agent seat, per media channel and one for the Content Analyzer;1;True;False;;;eServices 8.5;eServices 8.5
+eServices Manager supports role-based access;1;True;False;;;eServices 8.5;eServices 8.5
+ESP is the protocol used by Interaction Server to communicate with other servers that perform services, like routing;1;False;True;;;eServices 8.5;eServices 8.5
+The only way to Load Balance between multiple ESP servers is to list all of them on the connecting application's connection tab;1;True;False;;;eServices 8.5;eServices 8.5
+UCS DAPs requires a connection to DBServer;1;False;True;;;eServices 8.5;eServices 8.5
+A new Email Server endpoint can be implemented in Composer and used without needing to make changes to the Email Server application object;1;False;True;;;eServices 8.5;eServices 8.5
+For load balancing to be enabled on Interaction Server, connections must be configured from Interaction Server to each instance of Application Server;1;True;False;;;eServices 8.5;eServices 8.5
+Standard Responses are configured using an eServices Manager outside of Composer;1;True;False;;;eServices 8.5;eServices 8.5
+Chat Server uses plain HTTP to communicate with session participants like the customer and the agent;1;False;True;;;eServices 8.5;eServices 8.5
+"The option ""ics_multi_media_agent_seat = 100"" means that a maximum of 100 agents can receive both email and chat interactions";1;False;True;;;eServices 8.5;eServices 8.5
+Which component manage switch and database independence, common messaging ?;1;Framework;Interaction Management;Universal Routing;Solution Reporting;Framework;Framework 8.5 Routing & Reporting
+Which component is comparing Contact Center productivity from today ?;1;Solution Reporting;Framework;Interaction Management;Universal Routing;Framework;Framework 8.5 Routing & Reporting
+The Genesys Platform is only used for inbound-voice interations;1;False;True;;;Framework;Framework 8.5 Routing & Reporting
+The Genesys Platform connect all resources, interactions, and informations into one platform ?;1;True;False;;;Framework;Framework 8.5 Routing & Reporting
+The Genesys Platform includes all Genesys core components ?;1;True;False;;;Framework;Framework 8.5 Routing & Reporting
+Which component provides operational information that managers and supervisors need for making decisions ?;1;Solution Reporting;Framework;Universal Routing;Interaction Management;Framework;Framework 8.5 Routing & Reporting
+Genesys Engage applications have no technical dependencies;1;False;True;;;Framework;Framework 8.5 Routing & Reporting
+Which layer saves all the configurations settings of the applications ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Services Layer provides status of agent to the configuration layer ?;1;False;True;;;Layers;Framework 8.5 Routing & Reporting
+Genesys is made of 7 differents layers ?;1;False;True;;;Layers;Framework 8.5 Routing & Reporting
+Configuration Layer provides centralized configuration, access control, and dynamic reconfiguration and notification ?;1;True;False;;;Layers;Framework 8.5 Routing & Reporting
+Media Layer monitors objects, applications, solutions and views status and alarms ?;1;False;True;;;Layers;Framework 8.5 Routing & Reporting
+Which layer controls access and stores user information ?;1;Configuration Layer;Media Layer;User Interaction Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer tracks status and calculates statistics ?;1;Services Layer;Management Layer;Configuration Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer restarts an application or has a backup application take control;1;Management Layer;Services Layer;User Interaction Layer;Media Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides access control ?;1;Configuration Layer;User Interaction Layer;Services Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides dynamic reconfiguration and notification ?;1;Configuration Layer;User Interaction Layer;Services Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a centralized configuration ?;1;Configuration Layer;User Interaction Layer;Services Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides alarm processing ?;1;Management Layer;Configuration Layer;Services Layer;Media Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides solution control ?;1;Management Layer;User Interaction Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a log events interface ?;1;Management Layer;User Interaction Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides fault handling ?;1;Management Layer;User Interaction Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides interaction tracking ?;1;Media Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides external interfaces ?;1;Media Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides attached data distribution ?;1;Media Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which Layer does routing and statistics use for statistics ?;1;Services Layer;Management Layer;Configuration Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a compilation of statistics and objets status ?;1;Services Layer;Configuration Layer;Management Layer;Media Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides external interfaces, interaction tracking and attached data distribution;1;Media Layer;Services Layer;Management Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a compilation of statistics and objets status ?;1;Services Layer;Media Layer;Management Layer;Configuration Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides solution control and alarm processing ?;1;Management Layer;Services Layer;User Interaction Layer;Media Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer configure, monitor and control applications and solutions, and view status and alarms ?;1;User Interaction Layer;Management Layer;Services Layer;Configuration Layer;Layers;Framework 8.5 Routing & Reporting
+There must be one DBServer per Database Access Point ?;1;False;True;;;Layers;Framework 8.5 Routing & Reporting
+Database Access Point include information about database such as its name;1;True;False;;;Layers;Framework 8.5 Routing & Reporting
+Applications might use JDBC or a DBServer to connect to a database;1;True;False;;;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the centralized configuration functionality ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the access control functionality ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the dynamic reconfiguration and notification functionality ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer create and store agents ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer create groups ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer associate agents with groups ?;1;Configuration Layer;Management Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the solution control functionality ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the alarm processing functionality ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the log event interface functionality ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides the fault handling functionality ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer monitor all hosts running Genesys ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer send alert email when a server has failed ?;1;Management Layer;Configuration Layer;Services Layer;User Interaction Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer configure, monitor and control applications and solutions ?;1;User Interaction Layer;Management Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer deploy Genesys Installation Package on any host ?;1;User Interaction Layer;Management Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides Role-Based Access Control ?;1;User Interaction Layer;Management Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a view for status and alarms ?;1;User Interaction Layer;Management Layer;Configuration Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides external interface ?;1;Media Layer;User Interaction Layer;Management Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides interaction tracking functionality ?;1;Media Layer;User Interaction Layer;Management Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides attached data distribution functionality ?;1;Media Layer;User Interaction Layer;Management Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer controls inbound and outbound calls through an interface with a traditional switch ?;1;Media Layer;User Interaction Layer;Management Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer controls email messages through an interface with a corporate email server ?;1;Media Layer;User Interaction Layer;Management Layer;Services Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer provides a compilation of statistics and objects status ?;1;Services Layer;Media Layer;User Interaction Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer calculates the average wait time ?;1;Services Layer;Media Layer;User Interaction Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Which layer calculates how long the Agent is Ready ?;1;Services Layer;Media Layer;User Interaction Layer;Management Layer;Layers;Framework 8.5 Routing & Reporting
+Where Sellables Items informations are stored ?;1;Config Server;Licence Manager;Log DB;Config DB;Licenses;Framework 8.5 Routing & Reporting
+Which component measure the use of commercial licenses ?;1;License Reporting Manager;License Manager;Config Server;Config DB;Licenses;Framework 8.5 Routing & Reporting
+Which component measure the use of technical licenses ?;1;License Manager;License Reporting Manager;Config Server;Config DB;Licenses;Framework 8.5 Routing & Reporting
+ORS require a license for high availability.;1;False;True;;;Licenses;Framework 8.5 Routing & Reporting
+URS require a license for Router Seats and HA.;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+Which functionlity doesn't need a license ?;1;Single-Site;Agent Seats;Multi-Site;HA;Licenses;Framework 8.5 Routing & Reporting
+A technical license is a feature followed by 12 digits.;1;False;True;;;Licenses;Framework 8.5 Routing & Reporting
+A technical license is a feature followed by the name of the fonctionality.;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+Warm Standby and Hot Standby license are different.;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+Which license provides the right to deploy and the use of components and functionality ?;1;Sellables items;Technical licenses;License Deamon;License Server;Licenses;Framework 8.5 Routing & Reporting
+A Sellable Item line contains :;1;12 digits in hex format;The name of the feature;;;Licenses;Framework 8.5 Routing & Reporting
+A feature line contains :;1;The name of the feature;12 digits in hex format;;;Licenses;Framework 8.5 Routing & Reporting
+Which does not contains an expiration date ?;1;License Deamon;Sellable Item;Technical License;;Licenses;Framework 8.5 Routing & Reporting
+Feature lines can be edited without invalidate the license file ?;1;False;True;;;Licenses;Framework 8.5 Routing & Reporting
+Hostname and port name can be edited without invalidate the license file ?;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+The pathname on the License deamon line can be edited without invalidate the license file ?;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+A license is required if the Configuration Server is launched in proxy mode ?;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+A license is required for the Configuration Server in Master mode?;1;False;True;;;Licenses;Framework 8.5 Routing & Reporting
+A license is required to start and stop T/SIP Server ?;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+The ISCC functionality requires a license ?;1;True;False;;;Licenses;Framework 8.5 Routing & Reporting
+The technical license 'ha_redundancy' is for :;1;Warm Standby;Hot Sandby;;;Licenses;Framework 8.5 Routing & Reporting
+The technical license 'cti_ha_option' is for :;1;Hot Sandby;Warm Standby;;;Licenses;Framework 8.5 Routing & Reporting
+Which deamon start and stop vendor deamons ?;1;License Manager;Genesys Vendor;;;Licenses;Framework 8.5 Routing & Reporting
+Which deamon records how many licenses are checked out as well as which application is using them ?;1;Genesys Vendor;Licence Manager;;;Licenses;Framework 8.5 Routing & Reporting
+Who provides centralized processing of log events for Genesys server applications ?;1;Message Server;LCA;SCS;GDA;Management Layer;Framework 8.5 Routing & Reporting
+Who Starts and stops local server applications ?;1;LCA;Message Server;SCS;GDA;Management Layer;Framework 8.5 Routing & Reporting
+Who monitors solution status across the entire installation and processes alarm reactions ?;1;SCS;LCA;Message Server;GDA;Management Layer;Framework 8.5 Routing & Reporting
+Which component triggers alarms ?;1;Message Server;GDA;SCS;LCA;Management Layer;Framework 8.5 Routing & Reporting
+Who remotely deploys software onto local machines ?;1;GDA;SCS;LCA;Message Server;Management Layer;Framework 8.5 Routing & Reporting
+SCS in Single Mode require a license.;1;False;True;;;Management Layer;Framework 8.5 Routing & Reporting
+Distributed SCS functionlity require a license.;1;True;False;;;Management Layer;Framework 8.5 Routing & Reporting
+What is the correct order for starting ?;1;LCA -> Message Server -> SCS;Message Server -> LCA -> SCS;SCS -> LCA -> Message Server;;Management Layer;Framework 8.5 Routing & Reporting
+Which level of alarm detection is based on the specific event condition ?;1;Standard;Advanced;;;Management Layer;Framework 8.5 Routing & Reporting
+Which level of alarm detection is based on a variable that reaches a threashold ?;1;Advanced;Standard;;;Management Layer;Framework 8.5 Routing & Reporting
+Which component makes the real-time business decisions get right interaction to the right agent at the right time ?;1;Universal Routing;Interaction Management;Framework;Solution Reporting;Routing;Framework 8.5 Routing & Reporting
+Which component is helping customers through email and chat sessions ?;1;Interaction Management;Universal Routing;Framework;Solution Reporting;Routing;Framework 8.5 Routing & Reporting
+Which finds agent with the best combinaison of capabilities to assist customer ?;1;Skill-Based Routing;Universal Routing;Routing Server;Routing Point;Routing;Framework 8.5 Routing & Reporting
+Genesys Composer is en Eclipse-based development environment that supports the development of routing application (SCXML);1;True;False;;;Routing;Framework 8.5 Routing & Reporting
+Who is the routing engine that runs strategic targt-seeking algorithms for inbound interactions ?;1;Universal Routing Server;Orchestration Server;Univeral Routing Indicator;Routing Stat Server;Routing;Framework 8.5 Routing & Reporting
+Who is responsible for executing SCXML based logic ?;1;Orchestration Server;Universal Routing Server;Univeral Routing Indicator;Routing Stat Server;Routing;Framework 8.5 Routing & Reporting
+To which object are interactions routed ?;1;Target object;Skill object;Place object;Switch object;Routing;Framework 8.5 Routing & Reporting
+A routing application is a set of instructions and decisions;1;True;False;;;Routing;Framework 8.5 Routing & Reporting
+With who Stat Server must communicate with to register the DNs it whishes to receive messages about ?;1;T-Server;Configuration Server;GAX;Message Server;Routing;Framework 8.5 Routing & Reporting
+A capacity snapshot indicates routability;1;True;False;;;Routing;Framework 8.5 Routing & Reporting
+Who runs target-seeking algorithms for interaction ?;1;URS;ORS;Web application server;Composer;Routing;Framework 8.5 Routing & Reporting
+Who notifies URS and ORS that a call has arrived and needs routing ?;1;T-Server;Stat Server;Composer;Web application server;Routing;Framework 8.5 Routing & Reporting
+Who fetches and executes SCXML applications ?;1;ORS;URS;T-Server;Web application server;Routing;Framework 8.5 Routing & Reporting
+Where all routing applications must be uploaded ?;1;Web application server;ORS;URS;Composer;Routing;Framework 8.5 Routing & Reporting
+Who indicates that an interaction has been routed as requested ?;1;EventRouteUsed;RequestRouteCall;EventRouteRequest;Request successful;Routing;Framework 8.5 Routing & Reporting
+Who is a set of instructions to T-Server/SIP Server with results of routing logic ?;1;RequestRouteCall;EventRouteUsed;EventRouteRequest;Request successful;Routing;Framework 8.5 Routing & Reporting
+Who indicates that an interaction has been placed in a routing point and is waiting for routing instructions ?;1;EventRouteRequest;EventRouteUsed;RequestRouteCall;Request successful;Routing;Framework 8.5 Routing & Reporting
+Who is seen when ORS successfully retrieves application from web application server ?;1;Request successful;EventRouteUsed;RequestRouteCall;EventRouteRequest;Routing;Framework 8.5 Routing & Reporting
+URS and ORS can be connected to differents T-Servers;1;False;True;;;Routing;Framework 8.5 Routing & Reporting
+SIP Server only require licenses if High Availability is configured;1;False;True;;;Services Layer;Framework 8.5 Routing & Reporting
+Routing and reporting use the Services Layer for statistics ?;1;True;False;;;Statistics;Framework 8.5 Routing & Reporting
+Who calculate statistics and maintains the current state on the contact center ressources;1;Stat Server;Configuration Server;T-Server;Message Server;Statistics;Framework 8.5 Routing & Reporting
+Who requests statistics from Stat Server and display them as dynamic report ?;1;CCPulse+;Pulse;CC Analyser;Message Server;Statistics;Framework 8.5 Routing & Reporting
+Stat Server tracks information about contact center ?;1;True;False;;;Statistics;Framework 8.5 Routing & Reporting
+Who enables glance views of real-time contact center statistics within the GAX user interface ?;1;Pulse;CCPulse+;CC Analyser;Message Server;Statistics;Framework 8.5 Routing & Reporting
+Which server tracks informations about the contact center ?;1;Stat Server;T-Server;Configuration Server;Orchestration Server;Statistics;Framework 8.5 Routing & Reporting
+Who calculate statistics and maintains the current state on the contact center ressources ?;1;Stat Server;Pluse;CCPulse;Pulse Collector;Statistics;Framework 8.5 Routing & Reporting
+Who requests statistics from Stat Server and displays them as dynamic reports ?;1;CCPulse;Pulse;T-Server;Pulse collector;Statistics;Framework 8.5 Routing & Reporting
+CCPulse only supports real-time reporting;1;False;True;;;Statistics;Framework 8.5 Routing & Reporting
+Who communicate with T-Server to register the DNs it wishes to receive messages about ?;1;Stat Server;Configuration Server;GAX;Message Server;Statistics;Framework 8.5 Routing & Reporting
+If an agent is not being routed to, or if statistics are not being generated on that agent, you should check :;1;Stat Server log file;Workspace;System preferences;Configuration Server;Statistics;Framework 8.5 Routing & Reporting
+Who tracks the real-time status of the contact center objets ?;1;Stat Server;SCS;Message Server;ORS;Statistics;Framework 8.5 Routing & Reporting
+Who displays real-time statistics from Stat Server ?;1;CCPulse;Pulse;DMA;Pulse Collector;Statistics;Framework 8.5 Routing & Reporting
+Which of the following contact center items can you configure un GAX ?;3;Persons;Skills;Agent groups;Agent computers;User Interaction Layer;Framework 8.5 Routing & Reporting
+Permission controls access to the specific features in graphical interfaces ?;1;False;True;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+Roles controls access to the specific features in graphical interfaces ?;1;True;False;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+Master Account is created at the initialization of the config database ?;1;True;False;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+In which mode a super admin can modify configuration data ?;1;Emergency mode;read-only;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+One application template can be used to create as many different applications of that type as you wish;1;True;False;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+GAX stores its configuration in the gax DB;1;False;True;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+In Workspace Desktop Edition, in addition to the Agent Status menu, where can you change your status from Not Ready to Ready for inbound calls ?;1;My Channels;Contact Center Statistics;Main Menu;My Statistics;Workspace;Framework 8.5 Routing & Reporting
+Which SCS modes require a license ?;2;Distributed;SNMP features;Single Mode;;Licenses;Framework 8.5 Routing & Reporting
+If T-Server don't obtain a licence from Licence Manager it will start and retry later to get a license;1;False;True;;;Licenses;Framework 8.5 Routing & Reporting
+Which items can be edited without invalidate the license file ?;3;Hostname;Port number;Pathname;Daemon name;Licenses;Framework 8.5 Routing & Reporting
+Which of the following is a valid Genesys Topology ?;3;1 Configuration Server, 2 Proxy Configuration Servers, 1 switch, 1 T-Server, 3 StatServers, 1 URS;1 Configuration Server, 1 switch, 1 T-Server, 1 SIP server, 3 StatServers, 1 URS;1 Configuration Server, 1 switch, 1 T-Server, 1 StatServer, 5 URS;1 Configuration Server, 3 switches, 1 T-Server, 1 StatServer, 1 URS;Framework;Framework 8.5 Routing & Reporting
+In the configuration file used by Configuration Server what is the name of the section where you define Configuration Server’s operational options ?;1;[confserv];[default];[configserv];[cfgservopt];Configuration Layer;Framework 8.5 Routing & Reporting
+A Configuration Server Proxy is required when deploying every Framework 8.5 solution;1;False;True;;;Configuration Layer;Framework 8.5 Routing & Reporting
+What is the term used for the unique identifier that T-Server allocates to each interaction ? ;1;Connection ID;Call ID;Object ID;Event ID;Media Layer;Framework 8.5 Routing & Reporting
+Which of the following applications do NOT require an application configuration object in the Configuration Layer ?;2;LCA;Configuration DB Server;SCS;Log DB Server;Configuration Layer;Framework 8.5 Routing & Reporting
+What is the name of the Configuration Layer application object section where you can configure logging ?;1;log;verbose;debug;info;Configuration Layer;Framework 8.5 Routing & Reporting
+Which one of the following products does NOT need an entry in the license file ?;1;DB Server;Distributed Configuration Server;T-Server;URS;Licenses;Framework 8.5 Routing & Reporting
+What is not a role of a Super node ?;1;Manage and Notifies all TServers for workload distribution;Maintains connections to all ORS;Handles Failover;Notifies members of nodes when a node fails ;Routing;Framework 8.5 Routing & Reporting
+Which application is responsible for Fetching SCXML ?;1;ORS;URS;SIP Server;Web Application Server;Routing;Framework 8.5 Routing & Reporting
+Services Layer provides an interface for Genesys components to which of the following ?;1;Database management systems;T-Servers;Tenants;Switches;Services Layer;Framework 8.5 Routing & Reporting
+A DB Server can only have one DAP;1;False;True;;;Framework;Framework 8.5 Routing & Reporting
+Which layer provides the ability to switch Backup to Primary application when an application crashes ?;1;Managment Layer;User Interaction Layer;Services Layer;Configuration Layer;Framework;Framework 8.5 Routing & Reporting
+What is stored in the GAX Database ?;2;Ressources for GAX;Operationals Parameters;Objects;GAX configuration;User Interaction Layer;Framework 8.5 Routing & Reporting
+In Warm Standby data are synchronized between the Primary T-Server and the Backup T-Server;1;False;True;;;Services Layer;Framework 8.5 Routing & Reporting
+Which fonctionality applies to the User Interaction Layer ?;3;Configure, monitor and control applications and solutions;Deploy Genesys Installation Packages on any host;Role-Based Access Control;External Interfaces;User Interaction Layer;Framework 8.5 Routing & Reporting
+GAX uses a DAP DBS to access to Gax DB;1;False;True;;;User Interaction Layer;Framework 8.5 Routing & Reporting
+Where logs are written if Network Logging is enable ?;1;Log DB;Console windows;Log file;;Management Layer;Framework 8.5 Routing & Reporting
+An application must have its logs configured on Network so that alarms can be detected;1;True;False;;;Management Layer;Framework 8.5 Routing & Reporting
+Which fonctionality applies to the Media Layer ?;3;External Interfaces;Interaction Tracking;Attached Data Distribution;Access Control;Media Layer;Framework 8.5 Routing & Reporting
+Which fonctionality applies to the Services Layer ?;1;Compilation of statistics and object status;Attached Data Distribution;Role-Based Access Control;External Interfaces;Services Layer;Framework 8.5 Routing & Reporting
+The Stat Server registers with the T-Server only for the objects it wants to monitor;1;True;False;;;Services Layer;Framework 8.5 Routing & Reporting
+The Capacity Snapshot indicates the routability of each agent;1;True;False;;;Services Layer;Framework 8.5 Routing & Reporting
+Which fonctionality applies to the Stat Server as a client ?;3;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;Routing and reporting rely on the Stat Server;Services Layer;Framework 8.5 Routing & Reporting
+Which fonctionality applies to the Stat Server as a Server ?;1;Routing and reporting rely on the Stat Server;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;Services Layer;Framework 8.5 Routing & Reporting
+Operational Parameters can be edited quickly with GAX;1;True;False;;;Operational Parameters;Framework 8.5 Routing & Reporting
+The receiving application does not need to be configured to receive / use the data;1;False;True;;;Operational Parameters;Framework 8.5 Routing & Reporting
+Transactions Lists are part of the operational parameters;1;True;False;;;Operational Parameters;Framework 8.5 Routing & Reporting
+What does the Pulse DB stores ?;2;Templates;Widgets;Statistics;Configuration;Operational Parameters;Framework 8.5 Routing & Reporting
