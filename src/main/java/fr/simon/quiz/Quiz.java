@@ -1,9 +1,6 @@
 package fr.simon.quiz;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
-//import com.mysql.cj.xdevapi.Statement;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,7 +10,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-//import java.sql.*;
 import java.time.LocalDateTime;
 
 public class Quiz {
@@ -65,8 +61,6 @@ public class Quiz {
         } 
 
         HashMap<Integer, Integer> mapScoreRep = new HashMap<>();
-        HashMap<Integer, Integer> mapQuiz = new HashMap<>();
-        Map<Integer, Integer> mapQuestionsRepondues = new HashMap<>();
         try {
             Scanner lecteur;
             File fichierTaux = new File(CheminProjet + "/Ressources/tauxBonnesReponses.txt");
@@ -234,36 +228,44 @@ public class Quiz {
         Collections.shuffle(listeQuestions);
         Fenetre ma_fenetre = new Fenetre(x, y);
 
+        Map<Integer, List<Integer>> listeScores = new HashMap<>();
+        int scoreMax = -1;
         for(int i = 0; i < listeQuestions.size(); i++) {
-            int idQest = listeQuestions.get(i).getId();
-            int scoreQuestion = mapScoreRep.get(idQest).intValue();
-            mapQuiz.put(idQest, scoreQuestion);
+            int idQuest = listeQuestions.get(i).getId();
+            int scoreQuestion = mapScoreRep.get(idQuest).intValue();
+
+            if(listeScores.containsKey(scoreQuestion)) {
+                List<Integer> tmp = listeScores.get(scoreQuestion);
+                tmp.add(idQuest);
+                listeScores.put(scoreQuestion, tmp);
+            } else {
+                List<Integer> tmp = new LinkedList<>();
+                tmp.add(idQuest);
+                listeScores.put(scoreQuestion, tmp);
+            }
+
+            if(scoreQuestion > scoreMax)
+                scoreMax = scoreQuestion;
         }
 
-        // Trier par ordre de valeur croissant
-        Map<Integer, Integer> mapQuizCroissant = mapQuiz.entrySet()
-                    .stream()
-                    .sorted(Map.Entry.comparingByValue())
-                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+        List<Integer> ordreQuestions = new LinkedList<>();
+        for(int i = 0; i <= scoreMax; i++) {
+            if(listeScores.containsKey(i)) {
+                List<Integer> tmp = listeScores.get(i);
+                for(int a = 0; a < tmp.size(); a++) {
+                    ordreQuestions.add(tmp.get(a));
+                }
+            }
+        }
 
         Chrono chrono = new Chrono();
         chrono.start();
 
-        //for(int i = 0; i < nbreQuestions; i++) {
-        for(Map.Entry<Integer, Integer> quest : mapQuizCroissant.entrySet()) {
-            int i = quest.getKey(); // ID de la question
-            int rang = -1;
-            int scoreQuestion = quest.getValue();
-
-            for(int a = 0; a < listeQuestions.size(); a++) {
-                if(listeQuestions.get(a).getId() == i) {
-                    rang = a;
-                    break;
-                }
-            }
+        for(Integer idQuestion : ordreQuestions) {
+            int scoreQuestion = mapScoreRep.get(idQuestion);
 
             ma_fenetre.unselectAllButtons();
-            ma_fenetre.updateContent( (++totalQuestions + " / " + nbreQuestions), listeQuestions, rang, "");
+            ma_fenetre.updateContent( (++totalQuestions + " / " + nbreQuestions), listeQuestions, idQuestion, "");
             
             while(ma_fenetre.getModeBouton() == -1) {
                 try {
@@ -272,11 +274,10 @@ public class Quiz {
                 }
             }
            
-            int pointQuestion = verifierReponses(ma_fenetre, listeQuestions, erreurs, rang, ma_fenetre.getReponses());
-            String themeQuestion = listeQuestions.get(rang).getTheme();
+            int pointQuestion = verifierReponses(ma_fenetre, listeQuestions, erreurs, idQuestion, ma_fenetre.getReponses());
+            String themeQuestion = listeQuestions.get(idQuestion).getTheme();
 
-            //mapQuizCroissant.put(i, scoreQuestion + pointQuestion);
-            mapQuestionsRepondues.put(i, scoreQuestion + pointQuestion);
+            mapScoreRep.put(idQuestion, scoreQuestion + pointQuestion);
 
             score += pointQuestion;
 
@@ -315,7 +316,7 @@ public class Quiz {
         }
         chrono.stop();
 
-        ecrireFichierTaux(majMapTaux(mapScoreRep, mapQuestionsRepondues));
+        ecrireFichierTaux(mapScoreRep);
 
         ma_fenetre.afficherScore((score * 100 / totalQuestions) + "%", chrono);
 
@@ -629,12 +630,12 @@ public class Quiz {
         }
     }
 
-    public static Map<Integer, Integer> majMapTaux(Map<Integer, Integer> mapInit, Map<Integer, Integer> mapQuiz) {
+    /*public static Map<Integer, Integer> majMapTaux(Map<Integer, Integer> mapInit, Map<Integer, Integer> mapQuiz) {
         Map<Integer, Integer> mapFinale = mapInit;
         for(Map.Entry<Integer, Integer> quest : mapQuiz.entrySet())
             mapFinale.put(quest.getKey(), quest.getValue());
         return mapFinale;
-    }
+    }*/
 
 
 }
