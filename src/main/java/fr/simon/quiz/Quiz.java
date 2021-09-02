@@ -629,13 +629,4 @@ public class Quiz {
             e.printStackTrace();
         }
     }
-
-    /*public static Map<Integer, Integer> majMapTaux(Map<Integer, Integer> mapInit, Map<Integer, Integer> mapQuiz) {
-        Map<Integer, Integer> mapFinale = mapInit;
-        for(Map.Entry<Integer, Integer> quest : mapQuiz.entrySet())
-            mapFinale.put(quest.getKey(), quest.getValue());
-        return mapFinale;
-    }*/
-
-
 }
