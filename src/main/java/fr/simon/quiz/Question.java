@@ -3,6 +3,7 @@ package fr.simon.quiz;
 import java.util.*;
 
 public class Question {
+    private int id;
     private String question;
     private List<String> reponse;
     private int nbreReponses;
@@ -12,8 +13,25 @@ public class Question {
     private String formation;
     private String theme;
     private boolean jeNeSaisPas;
+    private int scoreQuestion;
+
+
+    public Question() {
+        id = 0;
+        question = "";
+        nbreReponses = 0;
+        sommeReponses = 0;
+        reponse = null;
+        propositions = null;
+        justification = "";
+        formation = "";
+        theme = "";
+        scoreQuestion = 0;
+        jeNeSaisPas = false;
+    }    
     
     public Question(String pQuestion, int pnbreReponses, List<String> pReponse, List<String> pPropositions){
+        id = 0;
         question = pQuestion;
         nbreReponses = pnbreReponses;
         sommeReponses = 0;
@@ -22,10 +40,12 @@ public class Question {
         justification = "";
         formation = "";
         theme = "";
+        scoreQuestion = 0;
         jeNeSaisPas = false;
     }
 
-    public Question(String pQuestion, int pnbreReponses, List<String> pReponse, List<String> pPropositions, String ptheme){
+    public Question(int pid, String pQuestion, int pnbreReponses, List<String> pReponse, List<String> pPropositions, String ptheme){
+        id = pid;
         question = pQuestion;
         nbreReponses = pnbreReponses;
         sommeReponses = 0;
@@ -34,10 +54,12 @@ public class Question {
         justification = "";
         formation = "";
         theme = ptheme;
+        scoreQuestion = 0;
         jeNeSaisPas = false;
     }
 
-    public Question(String pQuestion, int pnbreReponses, List<String> pReponse, List<String> pPropositions, String pformation, String ptheme){
+    public Question(int pid, String pQuestion, int pnbreReponses, List<String> pReponse, List<String> pPropositions, String pformation, String ptheme){
+        id = pid;
         question = pQuestion;
         nbreReponses = pnbreReponses;
         sommeReponses = 0;
@@ -46,10 +68,12 @@ public class Question {
         justification = "";
         formation = pformation;
         theme = ptheme;
+        scoreQuestion = 0;
         jeNeSaisPas = false;
     }
 
-    public Question(String pQuestion, int pnbreReponses, int psommeReponses, List<String> pReponse, List<String> pPropositions, String ptheme, String pformation){
+    public Question(int pid, String pQuestion, int pnbreReponses, int psommeReponses, List<String> pReponse, List<String> pPropositions, String ptheme, String pformation){
+        id = pid;
         question = pQuestion;
         nbreReponses = pnbreReponses;
         sommeReponses = psommeReponses;
@@ -58,6 +82,7 @@ public class Question {
         justification = "";
         formation = pformation;
         theme = ptheme;
+        scoreQuestion = 0;
         jeNeSaisPas = false;
     }
 
@@ -140,6 +165,30 @@ public class Question {
 
     public void setJeNeSaisPas(boolean jeNeSaisPas) {
         this.jeNeSaisPas = jeNeSaisPas;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isJeNeSaisPas() {
+        return this.jeNeSaisPas;
+    }
+
+    public void setPropositions(List<String> propositions) {
+        this.propositions = propositions;
+    }
+
+    public int getScoreQuestion() {
+        return this.scoreQuestion;
+    }
+
+    public void setScoreQuestion(int scoreQuestion) {
+        this.scoreQuestion = scoreQuestion;
     }
 
 }

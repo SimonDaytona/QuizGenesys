@@ -1,171 +1,171 @@
-Question;nbreRep;A;B;C;D;Justification;Theme;Formation
-When using GAX to do a new installation, where are new privileges saved ?;1;GAX DB;Config DB;Log DB;Cassandra DB;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Which tab allow you to see which application is connected to the current application ?;1;Dependencies;Connections;Tenants;Switches;;01 - Administration overview;Framework 8.5 Routing & Reporting
-What contains a .apd file ?;1;Default options for applications in binary format;Default options for applications;Metadatas;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-What contains a .tlp file ?;1;Default options for applications;Default options for applications in binary format;Metadatas;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-What contains a .xml file ?;1;Metadatas;Default options for applications in binary format;Default options for applications;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Which tab allow you to see to which application is connected the current application ?;1;Connections;Dependencies;Tenants;Switches;;01 - Administration overview;Framework 8.5 Routing & Reporting
-When using GAX to do a new installation, when are new privileges imported ?;1;During the upload of an IP;During the installation of the application;;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-When using GAX to do a new installation,xml file is required to include new privileges bring by the ip ?;1;True;False;;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Which log level can be saved in the log DB ?;3;Standard;Interaction;Trace;Debug;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Which option allow to not delete the first log file of an application ?;1;keep-startup-file;keep-first-file;delete-first-file;delete-startup-file;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Where will network option send logs ?;1;Message Server;Log DB;SCS;LCA;;01 - Administration overview;Framework 8.5 Routing & Reporting
-The debug log level cannot be saved in the Log DB et stdout;1;False;True;;;;01 - Administration overview;Framework 8.5 Routing & Reporting
-Which section controls the configuration of the Config Server ?;1;[confserv];[conf];[config];[serverconfig];;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Which section controls the DB Server config of the Config Server ?;1;[dbserver];[dbconfig];[configdb];[dbservconf];;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-In which section is the encryption option for the DB password ?;1;[confserv];[log];[dbserver];[login];;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Which section controls the logging of the Config Server ?;1;[log];[logging];[logconf];[configlog];;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-During a creation/modification of an object, where does GAX send the querry ?;1;Config Server;Config DB;GAX DB;Message Server;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-What is the name of the file used by Config Server to start ?;1;confserv.cfg;confserv.txt;confserv.bat;confserv.exe;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-When is generated the startup file for Config Server ?;1;During the installation;During the first Startup;After the installation;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Clients of the Config DB cannot start if they are not connected to it;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Switch single tenant to multi tenant is very difficult;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-The Config Server has to be stopped during the password encryption ?;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-How can we start the Config Server ?;3;From Windows Services;From start menu;From command lines;From confserv.bat;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-The Configuration Layer has to be started before the Database Management System;1;False;True;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-You can change your password with a Genesys Application when using a third party authentification;1;False;True;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Which applications collects objets from the Config Server at startup ?;3;ORS;URS;Stat Server;T-Server;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-What are the steps needed to deploy Configuration Layer? ;3;Setup Configuration Server ;Setup Configuration Database ;Run License Utility ;Setup License Manager ;;02 - Configuration Layer;Framework 8.5 Routing & Reporting
-Which mode put everyone in read-only mode ?;1;read-only;Emergency mode;;;;03 - GA;Framework 8.5 Routing & Reporting
-The Master Account has all rights;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting
-Master Account isn't member of any group;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting
-GA is connected to :;3;Config Server;Log DB;SCS;Message Server;;03 - GA;Framework 8.5 Routing & Reporting
-Which mode put everyone except Super Admin in read-only mode ?;1;Emergency mode;read-only;;;;03 - GA;Framework 8.5 Routing & Reporting
-GA use a DAP_JDBC to connect to the log DB ?;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting
-Install a security certificate during the GA installation is mandatory;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting
-Master Account is assigned to all roles;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting
-GA can intall applications on remote hosts;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting
-Where do we put the listning port of the GDA ?;1;Host options;Host Object;LCA Object;lca.cfg;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting
-Where do we put the listning port of the LCA ?;1;Host Object;LCA Object;lca.cfg;Host options;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting
-We have to create a LCA object for a LCA ?;1;False;True;;;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting
-If the connection between an application and the Message Server is lost, what is the extension of the file that keep the logs until the connection is back ?;1;.qsp;.sqp;.psq;.qps;;05 - GAX;Framework 8.5 Routing & Reporting
-What is stored in the GAX DB ?;3;Operationals parameters;Audio ressources;Graphicals parameters;Objects;;05 - GAX;Framework 8.5 Routing & Reporting
-Which type of DAP is GAX using ?;1;DAP_JDBC;DAP_DBS;;;;05 - GAX;Framework 8.5 Routing & Reporting
-What is the first step when deploying GAX ?;1;Create the GAX DB;Launch the setup.exe for GAX;;;;05 - GAX;Framework 8.5 Routing & Reporting
-To which application GAX is NOT connected ?;1;Message Server;Log DB;Config Server;GDA;;05 - GAX;Framework 8.5 Routing & Reporting
-Which option tells to the Message Server to store messages in the log DB ?;1;db_storage;logdb_storage;log_storage;save_to_logdb;;05 - GAX;Framework 8.5 Routing & Reporting
-Which gives you access to graphical features ?;1;Roles;Permissions;;;;05 - GAX;Framework 8.5 Routing & Reporting
-Which gives you access to features ?;1;Permissions;Roles;;;;05 - GAX;Framework 8.5 Routing & Reporting
-Where does an application find the access informations to FlexLM ?;1;From the Config Server;In its options;From the License File;From a DAP;;06 - Licenses;Framework 8.5 Routing & Reporting
-Which applications need technical licenses ?;2;T-Server;URS;SCS;Config Server;;06 - Licenses;Framework 8.5 Routing & Reporting
-What are the possible Data Sources for License Reporting Manager ?;2;Configuration Server ;Solution Control Server ;SIP Server ;ICON ;;06 - Licenses;Framework 8.5 Routing & Reporting
-What are the possible Data Sources for License Reporting Manager ?;2;License Manager ;Solution Control Server ;GVP Reporting Server ;SIP Server ;;06 - Licenses;Framework 8.5 Routing & Reporting
-Which section can tell to SCS to autostart an application ?;1;[sml];[scsstart];[autostart];[lcastart];;07 - Management Layer;Framework 8.5 Routing & Reporting
-What is the name of the section which allow to start a third party application ?;1;[start_stop];[start];[start_command];[command];;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which utility provided with SCS can stop properly the T-Server ?;1;ccgs.pl;ccgs.cfg;ccgs.bat;ccgs.exe;;07 - Management Layer;Framework 8.5 Routing & Reporting
-What is the type of DAP between the Message Server and the Log DB ?;1;DAP_JDBC;DAP_DBS;;;;07 - Management Layer;Framework 8.5 Routing & Reporting
-You need a license to send SNMP trams;1;True;False;;;;07 - Management Layer;Framework 8.5 Routing & Reporting
-In which application the option to start a third party applicaiton is provided ?;1;Application Object;LCA Object;SCS Object;Message Server Object;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which section tells to the Message Server to save log in the Log DB ?;1;messages;log;dblog;db_storage;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which option tells to the Message Server to save log in the Log DB ?;1;db_storage;log_storage;save_log;network;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which section configures SCS to send email when alarms are trigged ?;1;mailer;mail;mailto;sendmail;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which component triggers alarms ?;1;SCS;Message Server;LCA;Log DB;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which utility provided with SCS can send logs instead of an application ?;1;logmsg;msglog;sendlog;logsend;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which event(s) will be put in the Audit tab of Centralized Log in GAX ?;2;Object Created;Request to start application;Automatic switchover;Minor error on applicaiton;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which level of logging is required to store log on Audit ?;1;Trace;Standard;Interaction;Debug;;07 - Management Layer;Framework 8.5 Routing & Reporting
-What is the name of the option to start a third party application ?;1;start_command;start;start_cmd;cmd;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which value send log event to Message Server ?;1;network;stdout;memory;;;07 - Management Layer;Framework 8.5 Routing & Reporting
-"Set ""network"" on the Trace option of the log section will only send trace events";1;False;True;;;;07 - Management Layer;Framework 8.5 Routing & Reporting
-Which section in the SIP Server allow to open the SIP port ?;1;[Tserver];[SIPServer];[Port];[SIP-Port];;08 - Media Layer;Framework 8.5 Routing & Reporting
-If the T/SIP Server doesn't start, what should we check first ?;1;License Manager;CTI-Link;Switch Object;The number of availailable seat licenses;;08 - Media Layer;Framework 8.5 Routing & Reporting
-Which option is realy usefull to indicates the number of licenses to the T-Server ?;1;num-sdn-licenses;num-of-licenses;licenses-number;licenses-sdn-number;;08 - Media Layer;Framework 8.5 Routing & Reporting
-Which option in the SIP Server allow to open the SIP port ?;1;sip-port;tserv-port;port;output-port;;08 - Media Layer;Framework 8.5 Routing & Reporting
-Which section indicates the location of FlexLM ?;1;[license];[license-file];[flexlm];[licence-manager];;08 - Media Layer;Framework 8.5 Routing & Reporting
-Which option indicates the location of FlexLM ?;1;license-file;license;flexlm;license-manager;;08 - Media Layer;Framework 8.5 Routing & Reporting
-Which section allow to indicate where is the log file of WDE ?;1;[interaction-workspace];[log];[logging];[workspace-log];;09 - WDE;Framework 8.5 Routing & Reporting
-Which option allow to define a default place in the Default Place field of WDE ?;1;login.default-place;default.place-login;default.login-place;;;09 - WDE;Framework 8.5 Routing & Reporting
-The softphone is connected to the PABX;1;True;False;;;;09 - WDE;Framework 8.5 Routing & Reporting
-Which option allow to enable/disable the roles in WDE ?;1;security.disable-rbac;security.enable-rbac;enable.rbac-security;disable.rbac-security;;09 - WDE;Framework 8.5 Routing & Reporting
-The Workspace Desktop is connected to the PABX ?;1;False;True;;;;09 - WDE;Framework 8.5 Routing & Reporting
-Which option tells to the Stat Server when to stop calcule a statitics if not asked ?;1;old-stat-remove-interval;old-stat-removal-interval;stop-stat-remove-interval;stop-stat-removal-interval;;10 - Services Layer;Framework 8.5 Routing & Reporting
-Who are Stat Server Clients ?;3;CCPulse;Pulse Collector;URS;Pulse;;10 - Services Layer;Framework 8.5 Routing & Reporting
-Which fonctionality applies to the Stat Server as a Server ?;1;Routing and reporting rely on the Stat Server;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;;10 - Services Layer;Framework 8.5 Routing & Reporting
-Which time profil can calculate statistics on 10 last minutes ?;1;Sliding;SinceLogin;Gowing;Selection;;10 - Services Layer;Framework 8.5 Routing & Reporting
-Which time profil can calculate statistics from 8h00 to 9h00 with a reset ?;1;Gowing;Sliding;SinceLogin;Selection;;10 - Services Layer;Framework 8.5 Routing & Reporting
-Which fonctionality applies to the Stat Server as a client ?;3;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;Routing and reporting rely on the Stat Server;;10 - Services Layer;Framework 8.5 Routing & Reporting
-In a solution, if a optional application stop what's happen ?;1;An alarm is raised and the solution is shown in green;An alarm is raised and the solution is shown in red;No alarm is raised and the solution is shown in red;No alarm is raised and the solution is shown in green;;11 - Routing;Framework 8.5 Routing & Reporting
-Which option(s) exists ?;3;debug-enable;debug-port;max-debug-session;debug-max-session;;11 - Routing;Framework 8.5 Routing & Reporting
-What are the conditions for an ORS to belong to a cluster ?;3;Each ORS must be connected to the same T-Server;Each ORS must be connected to the same Cassandra DB;Each ORS must have only one URS in its Connection List;Each ORS must be on the same host;;11 - Routing;Framework 8.5 Routing & Reporting
-Transition time overcome the delay between :;2;EventRouteUsed;EventEtablished;EventRouteRequest;EventRemoteConnectionSuccess;;11 - Routing;Framework 8.5 Routing & Reporting
-URS registers for :;1;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting
-ORS registers for :;3;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting
-Stat Server registers for :;2;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting
-Which option allow to hide some sensitive datas;1;ors-regex-<name>;ors-exclude-<name>;ors-hide-<name>;ors-excl-<name>;;11 - Routing;Framework 8.5 Routing & Reporting
-What is the order where URS check default route ?;1;Routing Point > T-Server > Tenant > URS;Routing Point > Tenant > T-Server > URS;URS > Tenant > T-Server > Routing Point;Tenant > T-Server > Routing Point > URS;;11 - Routing;Framework 8.5 Routing & Reporting
-ISCC registers for :;1;External RP;Routing Points;Extensions;ACD Queues;;11 - Routing;Framework 8.5 Routing & Reporting
-Which option force URS to register on extensions to recieve same informations as ORS ?;1;event_arrive;strategy;use_ors_info;register_extensions;;11 - Routing;Framework 8.5 Routing & Reporting
-ElasticSearch is mandatory for ORS to store data;1;False;True;;;;11 - Routing;Framework 8.5 Routing & Reporting
-What is the order of start for routing layer component ?;1;T-Server > Stat Server > URS > ORS;T-Server > Stat Server > ORS > URS;Stat Server > T-Server > URS > ORS;Stat Server > T-Server > ORS > URS;;11 - Routing;Framework 8.5 Routing & Reporting
-What is the prefix for URS statistics ?;1;R;URS;U;S;;11 - Routing;Framework 8.5 Routing & Reporting
-Which application is responsible for fetching SCXML ?;1;ORS;URS;SIP Server ;Web Application Server;;11 - Routing;Framework 8.5 Routing & Reporting
-To route some voice calls you need :;1;Composer Route;Composer Voice;;;;12 - Composer;Framework 8.5 Routing & Reporting
-Tomcat can be used for .NET projects;1;False;True;;;;12 - Composer;Framework 8.5 Routing & Reporting
-In Composer, the debug is performed with :;1;ORS;URS;Stat Server;WAS;;12 - Composer;Framework 8.5 Routing & Reporting
-Which option allow to edit templates provided by Genesys ?;1;Editable_templates;Edit_Templates;Change_Templates;;;13 - Pulse;Framework 8.5 Routing & Reporting
-Which option allow to setup templates ?;1;Install_Templates;Setup_Templates;Set_Templates;;;13 - Pulse;Framework 8.5 Routing & Reporting
-Which file provides stats types ?;1;Statprofil.cfg;Statprofil.xml;Statprofil.tlp;Statprofil.txt;;13 - Pulse;Framework 8.5 Routing & Reporting
-What is stored in the Pulse DB ?;2;Metrics;Stats definition;Pulse Templates;Stats;;13 - Pulse;Framework 8.5 Routing & Reporting
-What is the extension of a binary model file of a CCPulse+ tempaltes;1;.btpl;.bthr;.bact;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting
-What is the extension of a binary threashold file of a CCPulse+ tempaltes;1;.bthr;.btpl;.bact;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting
-What is the extension of a binary action file of a CCPulse+ tempaltes;1;.bact;.btpl;.bthr;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which section allow you to disable some features for user with user rank in CCPulse ?;1;[UserInterface];[Interface];[UserRank];[Workspace];;14 - CCPulse;Framework 8.5 Routing & Reporting
-A view can focuses on;1;An Agent Group;A queue;Several Agent Groups;Several Queues;;14 - CCPulse;Framework 8.5 Routing & Reporting
-The ability to someone to monitor an agent is given by :;1;A permission;A role;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-"What can be the cause of ""Server not found"" in CCPulse ?";1;Bad connection with Config Server;Bad connection with Stat Server;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-"What can be the cause to ""Connection cannot be etablished"" in CCPulse ?";2;We don't have the RX permission on the Stat Server;Bad connection with Stat Server;Bad connection with Config Server;Wrong login entrered;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which option specify where folder containing default actions is ?;1;BinActionStoreFullPath;BinActionStore;ActionStoreFullPath;ActionStore;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which option allow CCPulse to have one file per action, one file per template etc… ?;1;Legacy;Binary;Unique;Alone;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Why someone can't connect to CCpulse ?;1;He doesn't have the right permission;CCPulse is stopped;CCPulse cannot connect to Stat Server;CCPulse cannot connect to Config Server;;14 - CCPulse;Framework 8.5 Routing & Reporting
-What are the steps to troubleshoot contact center objects that doesn't apprear in CCPulse;3;Check if CCPulse is well configured;Check if CCPulse is connected to Stat Server;Check if we have RX permissions on thoses objects;Check if CCPulse is connected to Config Server;;14 - CCPulse;Framework 8.5 Routing & Reporting
-The Reporting Templates of CCPulse are stored in :;1;A directory;Config DB;Pulse DB;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-CCPulse is connected to :;2;Stat Server;Config Server;Pulse DB;Pulse Collector;;14 - CCPulse;Framework 8.5 Routing & Reporting
-What should we look if we select a template where statistics are not calculated ?;1;StatProfil.cfg file;Connection with Stat Server;Connection with Config Server;CCPulse configuration;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which rank allow to select a Stat Server in CCPulse+ ?;1;Administrator;Developer;User;Master;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Who can develop a template in CCPulse+ ?;2;Administrator;Developer;User;Master;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which option allow you to disable some features for user with user rank in CCPulse ?;1;DisableUserCommands;DisableUserFeature;DisableCommands;DisableFeatures;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which event indicates that a call entered in a VQ ?;1;EventQueued;EventArrived;EventRouteUsed;EventEtablished;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which event indicates that a call left the VQ ?;1;EventDiverted;EventLeft;EventRouteUsed;EventRinging;;14 - CCPulse;Framework 8.5 Routing & Reporting
-There is ranks on CCPulse+ ?;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-In Binary Storage type all Tempaltes are in the same file;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-During the installation of CCPulse+ we are asking the possibility to disable monitoring agent activity;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-It is possible to hide a disabled command in CCPulse+ options;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-An Administrator can disable some commands for user rank in CCPulse;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-If there are too many agents monitored, disable CurrentStateEnable in CCPulse can be a good idea;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Why could someone has grey icons in CCPulse ?;1;He didn't has the right rank;Features aren't installed;No object is selected;He didn't has the right role;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which option allow you to hide some features for user with user rank in CCPulse ?;1;HideDisabledCommands;HideDisabledFeatures;HideFeatures;HideCommands;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Where do we choose the Stat Server to use in CCPulse ?;1;During the creation of the workspace;In the Stat Server menu;In CCPulse+ applications options in GAX;In the view;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Virtual Queeus are used to;1;Make some statistics;Lower the network load;Virtual Queues are faster than Queues;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Disable the Object State on CCPulse+ is usefull to :;1;Lower the load of notifications on CCPulse+;Make the Object List more legible;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Genesys recommands to store the Reporting Tempaltes :;1;On a network directory;On a local Directory;In the Config Server;In Pulse DB;;14 - CCPulse;Framework 8.5 Routing & Reporting
-CCPulse+ request statistics from :;1;Stat Server;Pulse DB;Config DB;T-Server;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Where are stored dashboards, views, actions and thresholds  of CCPulse ?;1;File;Pulse DB;Config Server;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Reporting Templates include :;3;Actions;Templates;Threashold;Scripts;;14 - CCPulse;Framework 8.5 Routing & Reporting
-If some tools are disabled in the tools bar of CCPulse this is because;1;The person doesn't have the rank requiered;The person doesn't have the permission requiered;The person doesn't have the role requiered;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-"What does the error ""Unsupported or invalid stat"" means in CCPulse ?";1;The stat type does not exists in the Stat Profil.cfg;The Stat Server make an error on the stat calculation;CCPulse can't reach the Stat Server;Config Server give wrong information;;14 - CCPulse;Framework 8.5 Routing & Reporting
-"What can be the cause to ""invalid path to storage"" in CCPulse ?";1;A path to the provided Stat Type is wrong;The Statprofil.cfg path is wrong;Path to the Config DB is wrong;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Why CCPulse+ needs a connection with the Config Server ?;2;To retrieve its configuration;To get user privileges;To retrieve historic report data;To support historic views;;14 - CCPulse;Framework 8.5 Routing & Reporting
-There is Roles in CCPulse+ ?;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-In Legacy Storage type all tempaltes are in the same file;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Permissions allow to hide or show features in CCPulse ;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting
-In CCPulse+, what parameters are mandatory to set up automatic updates from Stat Server ?;2;Notification Mode ;Notification Frequency ;Statistical Type ;Interval Type ;;14 - CCPulse;Framework 8.5 Routing & Reporting
-In CCPulse+, what parameters are mandatory to set up automatic updates from Stat Server ?;2;Notification Frequency ;Insensitivity ;Statistical Type ;Interval Type ;;14 - CCPulse;Framework 8.5 Routing & Reporting
-Which option indicates to the SCS if it is the main SCS ?;1;distributed_rights;distributed_mode;mode;rights;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-Load Distribution require a license;1;True;False;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-What is recommanded by Genesys ;1;Have one Message Server per site;Have a global Message Server ;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-Which option give the right rights for the Config Server Proxy ?;1;Environment\default;login as system;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-Which option indicates to the SCS that the distributed mode is enabled ?;1;distributed_mode;mode;distributed;distributed_rights;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-Which option of the [MessageServer] section is used to indicate to the Message Server that it will be used for SCS;1;signature;role;scs_distributed;mode;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-The Config Server Proxy start with a cfg file;1;False;True;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-The ISCC is installed after the T-Server installation;1;False;True;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting
-An ORS Cluster is composed of : ;1;ORS Nodes;1 ORS / 1 URS;Primary ORS / Backup ORS;;;16 - HA;Framework 8.5 Routing & Reporting
-How is Cassandra started ?;2;With Cassandra.bat;As a serivce;In Gax;With Cassandra.exe;;16 - HA;Framework 8.5 Routing & Reporting
-What can be in an ORS node ?;2;Primary ORS;Backup ORS;URS Backup;URS Primary;;16 - HA;Framework 8.5 Routing & Reporting
-Which files have to be configured to customize Cassandra ?;2;logback.xml;cassandra.yaml;cassandra.conf;changes.xml;;16 - HA;Framework 8.5 Routing & Reporting
-Which option of the ORS in scxml section has to be set to true to enable ORS working with Cassandra ?;1;persistance-default;cassandra-enable;cassandra-nodes;cassandra-listenport;;16 - HA;Framework 8.5 Routing & Reporting
-Which tab allow to configure the ADDP;1;Connections;Dependencies;Options;General;;16 - HA;Framework 8.5 Routing & Reporting
-Load balancing and high availability in an Orchestration deployment are addressed by providing multiple instances (servers) of Orchestration Servers (nodes) in a single logical entity called a Cluster;1;True;False;;;;16 - HA;Framework 8.5 Routing & Reporting
-What is stored in the Cassandra DB ?;3;SCXML Sessions;SCXML session Data;SCXML session State;SCXML session configuration;;16 - HA;Framework 8.5 Routing & Reporting
-How Many Nodes a cluster can contain ?;1;As many as we want;The same number of URS;;;;16 - HA;Framework 8.5 Routing & Reporting
-All nodes within a cluster must be connected to :;3;The same T/SIP Server;The Same URS;The same Apache Cassandra;The same Configuration Server;;16 - HA;Framework 8.5 Routing & Reporting
-When configuring the Hot Standby you have to specify the connection between the Primary component and the Backup component;1;False;True;;;;16 - HA;Framework 8.5 Routing & Reporting
-In an ORS Cluster, all ORS nodes have the same number of interactions;1;False;True;;;;16 - HA;Framework 8.5 Routing & Reporting
+Question;nbreRep;A;B;C;D;Justification;Theme;Formation;id
+When using GAX to do a new installation, where are new privileges saved ?;1;GAX DB;Config DB;Log DB;Cassandra DB;;01 - Administration overview;Framework 8.5 Routing & Reporting;1
+Which tab allow you to see which application is connected to the current application ?;1;Dependencies;Connections;Tenants;Switches;;01 - Administration overview;Framework 8.5 Routing & Reporting;2
+What contains a .apd file ?;1;Default options for applications in binary format;Default options for applications;Metadatas;;;01 - Administration overview;Framework 8.5 Routing & Reporting;3
+What contains a .tlp file ?;1;Default options for applications;Default options for applications in binary format;Metadatas;;;01 - Administration overview;Framework 8.5 Routing & Reporting;4
+What contains a .xml file ?;1;Metadatas;Default options for applications in binary format;Default options for applications;;;01 - Administration overview;Framework 8.5 Routing & Reporting;5
+Which tab allow you to see to which application is connected the current application ?;1;Connections;Dependencies;Tenants;Switches;;01 - Administration overview;Framework 8.5 Routing & Reporting;6
+When using GAX to do a new installation, when are new privileges imported ?;1;During the upload of an IP;During the installation of the application;;;;01 - Administration overview;Framework 8.5 Routing & Reporting;7
+When using GAX to do a new installation,xml file is required to include new privileges bring by the ip ?;1;True;False;;;;01 - Administration overview;Framework 8.5 Routing & Reporting;8
+Which log level can be saved in the log DB ?;3;Standard;Interaction;Trace;Debug;;01 - Administration overview;Framework 8.5 Routing & Reporting;9
+Which option allow to not delete the first log file of an application ?;1;keep-startup-file;keep-first-file;delete-first-file;delete-startup-file;;01 - Administration overview;Framework 8.5 Routing & Reporting;10
+Where will network option send logs ?;1;Message Server;Log DB;SCS;LCA;;01 - Administration overview;Framework 8.5 Routing & Reporting;11
+The debug log level cannot be saved in the Log DB et stdout;1;False;True;;;;01 - Administration overview;Framework 8.5 Routing & Reporting;12
+Which section controls the configuration of the Config Server ?;1;[confserv];[conf];[config];[serverconfig];;02 - Configuration Layer;Framework 8.5 Routing & Reporting;13
+Which section controls the DB Server config of the Config Server ?;1;[dbserver];[dbconfig];[configdb];[dbservconf];;02 - Configuration Layer;Framework 8.5 Routing & Reporting;14
+In which section is the encryption option for the DB password ?;1;[confserv];[log];[dbserver];[login];;02 - Configuration Layer;Framework 8.5 Routing & Reporting;15
+Which section controls the logging of the Config Server ?;1;[log];[logging];[logconf];[configlog];;02 - Configuration Layer;Framework 8.5 Routing & Reporting;16
+During a creation/modification of an object, where does GAX send the querry ?;1;Config Server;Config DB;GAX DB;Message Server;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;17
+What is the name of the file used by Config Server to start ?;1;confserv.cfg;confserv.txt;confserv.bat;confserv.exe;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;18
+When is generated the startup file for Config Server ?;1;During the installation;During the first Startup;After the installation;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;19
+Clients of the Config DB cannot start if they are not connected to it;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;20
+Switch single tenant to multi tenant is very difficult;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;21
+The Config Server has to be stopped during the password encryption ?;1;True;False;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;22
+How can we start the Config Server ?;3;From Windows Services;From start menu;From command lines;From confserv.bat;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;23
+The Configuration Layer has to be started before the Database Management System;1;False;True;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;24
+You can change your password with a Genesys Application when using a third party authentification;1;False;True;;;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;25
+Which applications collects objets from the Config Server at startup ?;3;ORS;URS;Stat Server;T-Server;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;26
+What are the steps needed to deploy Configuration Layer? ;3;Setup Configuration Server ;Setup Configuration Database ;Run License Utility ;Setup License Manager ;;02 - Configuration Layer;Framework 8.5 Routing & Reporting;27
+Which mode put everyone in read-only mode ?;1;read-only;Emergency mode;;;;03 - GA;Framework 8.5 Routing & Reporting;28
+The Master Account has all rights;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting;29
+Master Account isn't member of any group;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting;30
+GA is connected to :;3;Config Server;Log DB;SCS;Message Server;;03 - GA;Framework 8.5 Routing & Reporting;31
+Which mode put everyone except Super Admin in read-only mode ?;1;Emergency mode;read-only;;;;03 - GA;Framework 8.5 Routing & Reporting;32
+GA use a DAP_JDBC to connect to the log DB ?;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting;33
+Install a security certificate during the GA installation is mandatory;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting;34
+Master Account is assigned to all roles;1;False;True;;;;03 - GA;Framework 8.5 Routing & Reporting;35
+GA can intall applications on remote hosts;1;True;False;;;;03 - GA;Framework 8.5 Routing & Reporting;36
+Where do we put the listning port of the GDA ?;1;Host options;Host Object;LCA Object;lca.cfg;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting;37
+Where do we put the listning port of the LCA ?;1;Host Object;LCA Object;lca.cfg;Host options;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting;38
+We have to create a LCA object for a LCA ?;1;False;True;;;;04 - Hosts and LCA;Framework 8.5 Routing & Reporting;39
+If the connection between an application and the Message Server is lost, what is the extension of the file that keep the logs until the connection is back ?;1;.qsp;.sqp;.psq;.qps;;05 - GAX;Framework 8.5 Routing & Reporting;40
+What is stored in the GAX DB ?;3;Operationals parameters;Audio ressources;Graphicals parameters;Objects;;05 - GAX;Framework 8.5 Routing & Reporting;41
+Which type of DAP is GAX using ?;1;DAP_JDBC;DAP_DBS;;;;05 - GAX;Framework 8.5 Routing & Reporting;42
+What is the first step when deploying GAX ?;1;Create the GAX DB;Launch the setup.exe for GAX;;;;05 - GAX;Framework 8.5 Routing & Reporting;43
+To which application GAX is NOT connected ?;1;Message Server;Log DB;Config Server;GDA;;05 - GAX;Framework 8.5 Routing & Reporting;44
+Which option tells to the Message Server to store messages in the log DB ?;1;db_storage;logdb_storage;log_storage;save_to_logdb;;05 - GAX;Framework 8.5 Routing & Reporting;45
+Which gives you access to graphical features ?;1;Roles;Permissions;;;;05 - GAX;Framework 8.5 Routing & Reporting;46
+Which gives you access to features ?;1;Permissions;Roles;;;;05 - GAX;Framework 8.5 Routing & Reporting;47
+Where does an application find the access informations to FlexLM ?;1;From the Config Server;In its options;From the License File;From a DAP;;06 - Licenses;Framework 8.5 Routing & Reporting;48
+Which applications need technical licenses ?;2;T-Server;URS;SCS;Config Server;;06 - Licenses;Framework 8.5 Routing & Reporting;49
+What are the possible Data Sources for License Reporting Manager ?;2;Configuration Server ;Solution Control Server ;SIP Server ;ICON ;;06 - Licenses;Framework 8.5 Routing & Reporting;50
+What are the possible Data Sources for License Reporting Manager ?;2;License Manager ;Solution Control Server ;GVP Reporting Server ;SIP Server ;;06 - Licenses;Framework 8.5 Routing & Reporting;51
+Which section can tell to SCS to autostart an application ?;1;[sml];[scsstart];[autostart];[lcastart];;07 - Management Layer;Framework 8.5 Routing & Reporting;52
+What is the name of the section which allow to start a third party application ?;1;[start_stop];[start];[start_command];[command];;07 - Management Layer;Framework 8.5 Routing & Reporting;53
+Which utility provided with SCS can stop properly the T-Server ?;1;ccgs.pl;ccgs.cfg;ccgs.bat;ccgs.exe;;07 - Management Layer;Framework 8.5 Routing & Reporting;54
+What is the type of DAP between the Message Server and the Log DB ?;1;DAP_JDBC;DAP_DBS;;;;07 - Management Layer;Framework 8.5 Routing & Reporting;55
+You need a license to send SNMP trams;1;True;False;;;;07 - Management Layer;Framework 8.5 Routing & Reporting;56
+In which application the option to start a third party applicaiton is provided ?;1;Application Object;LCA Object;SCS Object;Message Server Object;;07 - Management Layer;Framework 8.5 Routing & Reporting;57
+Which section tells to the Message Server to save log in the Log DB ?;1;messages;log;dblog;db_storage;;07 - Management Layer;Framework 8.5 Routing & Reporting;58
+Which option tells to the Message Server to save log in the Log DB ?;1;db_storage;log_storage;save_log;network;;07 - Management Layer;Framework 8.5 Routing & Reporting;59
+Which section configures SCS to send email when alarms are trigged ?;1;mailer;mail;mailto;sendmail;;07 - Management Layer;Framework 8.5 Routing & Reporting;60
+Which component triggers alarms ?;1;SCS;Message Server;LCA;Log DB;;07 - Management Layer;Framework 8.5 Routing & Reporting;61
+Which utility provided with SCS can send logs instead of an application ?;1;logmsg;msglog;sendlog;logsend;;07 - Management Layer;Framework 8.5 Routing & Reporting;62
+Which event(s) will be put in the Audit tab of Centralized Log in GAX ?;2;Object Created;Request to start application;Automatic switchover;Minor error on applicaiton;;07 - Management Layer;Framework 8.5 Routing & Reporting;63
+Which level of logging is required to store log on Audit ?;1;Trace;Standard;Interaction;Debug;;07 - Management Layer;Framework 8.5 Routing & Reporting;64
+What is the name of the option to start a third party application ?;1;start_command;start;start_cmd;cmd;;07 - Management Layer;Framework 8.5 Routing & Reporting;65
+Which value send log event to Message Server ?;1;network;stdout;memory;;;07 - Management Layer;Framework 8.5 Routing & Reporting;66
+"Set ""network"" on the Trace option of the log section will only send trace events";1;False;True;;;;07 - Management Layer;Framework 8.5 Routing & Reporting;67
+Which section in the SIP Server allow to open the SIP port ?;1;[Tserver];[SIPServer];[Port];[SIP-Port];;08 - Media Layer;Framework 8.5 Routing & Reporting;68
+If the T/SIP Server doesn't start, what should we check first ?;1;License Manager;CTI-Link;Switch Object;The number of availailable seat licenses;;08 - Media Layer;Framework 8.5 Routing & Reporting;69
+Which option is realy usefull to indicates the number of licenses to the T-Server ?;1;num-sdn-licenses;num-of-licenses;licenses-number;licenses-sdn-number;;08 - Media Layer;Framework 8.5 Routing & Reporting;70
+Which option in the SIP Server allow to open the SIP port ?;1;sip-port;tserv-port;port;output-port;;08 - Media Layer;Framework 8.5 Routing & Reporting;71
+Which section indicates the location of FlexLM ?;1;[license];[license-file];[flexlm];[licence-manager];;08 - Media Layer;Framework 8.5 Routing & Reporting;72
+Which option indicates the location of FlexLM ?;1;license-file;license;flexlm;license-manager;;08 - Media Layer;Framework 8.5 Routing & Reporting;73
+Which section allow to indicate where is the log file of WDE ?;1;[interaction-workspace];[log];[logging];[workspace-log];;09 - WDE;Framework 8.5 Routing & Reporting;74
+Which option allow to define a default place in the Default Place field of WDE ?;1;login.default-place;default.place-login;default.login-place;;;09 - WDE;Framework 8.5 Routing & Reporting;75
+The softphone is connected to the PABX;1;True;False;;;;09 - WDE;Framework 8.5 Routing & Reporting;76
+Which option allow to enable/disable the roles in WDE ?;1;security.disable-rbac;security.enable-rbac;enable.rbac-security;disable.rbac-security;;09 - WDE;Framework 8.5 Routing & Reporting;77
+The Workspace Desktop is connected to the PABX ?;1;False;True;;;;09 - WDE;Framework 8.5 Routing & Reporting;78
+Which option tells to the Stat Server when to stop calcule a statitics if not asked ?;1;old-stat-remove-interval;old-stat-removal-interval;stop-stat-remove-interval;stop-stat-removal-interval;;10 - Services Layer;Framework 8.5 Routing & Reporting;79
+Who are Stat Server Clients ?;3;CCPulse;Pulse Collector;URS;Pulse;;10 - Services Layer;Framework 8.5 Routing & Reporting;80
+Which fonctionality applies to the Stat Server as a Server ?;1;Routing and reporting rely on the Stat Server;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;;10 - Services Layer;Framework 8.5 Routing & Reporting;81
+Which time profil can calculate statistics on 10 last minutes ?;1;Sliding;SinceLogin;Gowing;Selection;;10 - Services Layer;Framework 8.5 Routing & Reporting;82
+Which time profil can calculate statistics from 8h00 to 9h00 with a reset ?;1;Gowing;Sliding;SinceLogin;Selection;;10 - Services Layer;Framework 8.5 Routing & Reporting;83
+Which fonctionality applies to the Stat Server as a client ?;3;Receives events from Media Servers;Uses these events to generate reports and statistics;Receive dynamic updates from Config Server ;Routing and reporting rely on the Stat Server;;10 - Services Layer;Framework 8.5 Routing & Reporting;84
+In a solution, if a optional application stop what's happen ?;1;An alarm is raised and the solution is shown in green;An alarm is raised and the solution is shown in red;No alarm is raised and the solution is shown in red;No alarm is raised and the solution is shown in green;;11 - Routing;Framework 8.5 Routing & Reporting;85
+Which option(s) exists ?;3;debug-enable;debug-port;max-debug-session;debug-max-session;;11 - Routing;Framework 8.5 Routing & Reporting;86
+What are the conditions for an ORS to belong to a cluster ?;3;Each ORS must be connected to the same T-Server;Each ORS must be connected to the same Cassandra DB;Each ORS must have only one URS in its Connection List;Each ORS must be on the same host;;11 - Routing;Framework 8.5 Routing & Reporting;87
+Transition time overcome the delay between :;2;EventRouteUsed;EventEtablished;EventRouteRequest;EventRemoteConnectionSuccess;;11 - Routing;Framework 8.5 Routing & Reporting;88
+URS registers for :;1;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting;89
+ORS registers for :;3;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting;90
+Stat Server registers for :;2;Routing Points;Extensions;ACD Queues;External RP;;11 - Routing;Framework 8.5 Routing & Reporting;91
+Which option allow to hide some sensitive datas;1;ors-regex-<name>;ors-exclude-<name>;ors-hide-<name>;ors-excl-<name>;;11 - Routing;Framework 8.5 Routing & Reporting;92
+What is the order where URS check default route ?;1;Routing Point > T-Server > Tenant > URS;Routing Point > Tenant > T-Server > URS;URS > Tenant > T-Server > Routing Point;Tenant > T-Server > Routing Point > URS;;11 - Routing;Framework 8.5 Routing & Reporting;93
+ISCC registers for :;1;External RP;Routing Points;Extensions;ACD Queues;;11 - Routing;Framework 8.5 Routing & Reporting;94
+Which option force URS to register on extensions to recieve same informations as ORS ?;1;event_arrive;strategy;use_ors_info;register_extensions;;11 - Routing;Framework 8.5 Routing & Reporting;95
+ElasticSearch is mandatory for ORS to store data;1;False;True;;;;11 - Routing;Framework 8.5 Routing & Reporting;96
+What is the order of start for routing layer component ?;1;T-Server > Stat Server > URS > ORS;T-Server > Stat Server > ORS > URS;Stat Server > T-Server > URS > ORS;Stat Server > T-Server > ORS > URS;;11 - Routing;Framework 8.5 Routing & Reporting;97
+What is the prefix for URS statistics ?;1;R;URS;U;S;;11 - Routing;Framework 8.5 Routing & Reporting;98
+Which application is responsible for fetching SCXML ?;1;ORS;URS;SIP Server ;Web Application Server;;11 - Routing;Framework 8.5 Routing & Reporting;99
+To route some voice calls you need :;1;Composer Route;Composer Voice;;;;12 - Composer;Framework 8.5 Routing & Reporting;100
+Tomcat can be used for .NET projects;1;False;True;;;;12 - Composer;Framework 8.5 Routing & Reporting;101
+In Composer, the debug is performed with :;1;ORS;URS;Stat Server;WAS;;12 - Composer;Framework 8.5 Routing & Reporting;102
+Which option allow to edit templates provided by Genesys ?;1;Editable_templates;Edit_Templates;Change_Templates;;;13 - Pulse;Framework 8.5 Routing & Reporting;103
+Which option allow to setup templates ?;1;Install_Templates;Setup_Templates;Set_Templates;;;13 - Pulse;Framework 8.5 Routing & Reporting;104
+Which file provides stats types ?;1;Statprofil.cfg;Statprofil.xml;Statprofil.tlp;Statprofil.txt;;13 - Pulse;Framework 8.5 Routing & Reporting;105
+What is stored in the Pulse DB ?;2;Metrics;Stats definition;Pulse Templates;Stats;;13 - Pulse;Framework 8.5 Routing & Reporting;106
+What is the extension of a binary model file of a CCPulse+ tempaltes;1;.btpl;.bthr;.bact;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting;107
+What is the extension of a binary threashold file of a CCPulse+ tempaltes;1;.bthr;.btpl;.bact;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting;108
+What is the extension of a binary action file of a CCPulse+ tempaltes;1;.bact;.btpl;.bthr;.stg;;14 - CCPulse;Framework 8.5 Routing & Reporting;109
+Which section allow you to disable some features for user with user rank in CCPulse ?;1;[UserInterface];[Interface];[UserRank];[Workspace];;14 - CCPulse;Framework 8.5 Routing & Reporting;110
+A view can focuses on;1;An Agent Group;A queue;Several Agent Groups;Several Queues;;14 - CCPulse;Framework 8.5 Routing & Reporting;111
+The ability to someone to monitor an agent is given by :;1;A permission;A role;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;112
+"What can be the cause of ""Server not found"" in CCPulse ?";1;Bad connection with Config Server;Bad connection with Stat Server;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;113
+"What can be the cause to ""Connection cannot be etablished"" in CCPulse ?";2;We don't have the RX permission on the Stat Server;Bad connection with Stat Server;Bad connection with Config Server;Wrong login entrered;;14 - CCPulse;Framework 8.5 Routing & Reporting;114
+Which option specify where folder containing default actions is ?;1;BinActionStoreFullPath;BinActionStore;ActionStoreFullPath;ActionStore;;14 - CCPulse;Framework 8.5 Routing & Reporting;115
+Which option allow CCPulse to have one file per action, one file per template etc… ?;1;Legacy;Binary;Unique;Alone;;14 - CCPulse;Framework 8.5 Routing & Reporting;116
+Why someone can't connect to CCpulse ?;1;He doesn't have the right permission;CCPulse is stopped;CCPulse cannot connect to Stat Server;CCPulse cannot connect to Config Server;;14 - CCPulse;Framework 8.5 Routing & Reporting;117
+What are the steps to troubleshoot contact center objects that doesn't apprear in CCPulse;3;Check if CCPulse is well configured;Check if CCPulse is connected to Stat Server;Check if we have RX permissions on thoses objects;Check if CCPulse is connected to Config Server;;14 - CCPulse;Framework 8.5 Routing & Reporting;118
+The Reporting Templates of CCPulse are stored in :;1;A directory;Config DB;Pulse DB;;;14 - CCPulse;Framework 8.5 Routing & Reporting;119
+CCPulse is connected to :;2;Stat Server;Config Server;Pulse DB;Pulse Collector;;14 - CCPulse;Framework 8.5 Routing & Reporting;120
+What should we look if we select a template where statistics are not calculated ?;1;StatProfil.cfg file;Connection with Stat Server;Connection with Config Server;CCPulse configuration;;14 - CCPulse;Framework 8.5 Routing & Reporting;121
+Which rank allow to select a Stat Server in CCPulse+ ?;1;Administrator;Developer;User;Master;;14 - CCPulse;Framework 8.5 Routing & Reporting;122
+Who can develop a template in CCPulse+ ?;2;Administrator;Developer;User;Master;;14 - CCPulse;Framework 8.5 Routing & Reporting;123
+Which option allow you to disable some features for user with user rank in CCPulse ?;1;DisableUserCommands;DisableUserFeature;DisableCommands;DisableFeatures;;14 - CCPulse;Framework 8.5 Routing & Reporting;124
+Which event indicates that a call entered in a VQ ?;1;EventQueued;EventArrived;EventRouteUsed;EventEtablished;;14 - CCPulse;Framework 8.5 Routing & Reporting;125
+Which event indicates that a call left the VQ ?;1;EventDiverted;EventLeft;EventRouteUsed;EventRinging;;14 - CCPulse;Framework 8.5 Routing & Reporting;126
+There is ranks on CCPulse+ ?;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;127
+In Binary Storage type all Tempaltes are in the same file;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;128
+During the installation of CCPulse+ we are asking the possibility to disable monitoring agent activity;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;129
+It is possible to hide a disabled command in CCPulse+ options;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;130
+An Administrator can disable some commands for user rank in CCPulse;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;131
+If there are too many agents monitored, disable CurrentStateEnable in CCPulse can be a good idea;1;True;False;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;132
+Why could someone has grey icons in CCPulse ?;1;He didn't has the right rank;Features aren't installed;No object is selected;He didn't has the right role;;14 - CCPulse;Framework 8.5 Routing & Reporting;133
+Which option allow you to hide some features for user with user rank in CCPulse ?;1;HideDisabledCommands;HideDisabledFeatures;HideFeatures;HideCommands;;14 - CCPulse;Framework 8.5 Routing & Reporting;134
+Where do we choose the Stat Server to use in CCPulse ?;1;During the creation of the workspace;In the Stat Server menu;In CCPulse+ applications options in GAX;In the view;;14 - CCPulse;Framework 8.5 Routing & Reporting;135
+Virtual Queeus are used to;1;Make some statistics;Lower the network load;Virtual Queues are faster than Queues;;;14 - CCPulse;Framework 8.5 Routing & Reporting;136
+Disable the Object State on CCPulse+ is usefull to :;1;Lower the load of notifications on CCPulse+;Make the Object List more legible;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;137
+Genesys recommands to store the Reporting Tempaltes :;1;On a network directory;On a local Directory;In the Config Server;In Pulse DB;;14 - CCPulse;Framework 8.5 Routing & Reporting;138
+CCPulse+ request statistics from :;1;Stat Server;Pulse DB;Config DB;T-Server;;14 - CCPulse;Framework 8.5 Routing & Reporting;139
+Where are stored dashboards, views, actions and thresholds  of CCPulse ?;1;File;Pulse DB;Config Server;;;14 - CCPulse;Framework 8.5 Routing & Reporting;140
+Reporting Templates include :;3;Actions;Templates;Threashold;Scripts;;14 - CCPulse;Framework 8.5 Routing & Reporting;141
+If some tools are disabled in the tools bar of CCPulse this is because;1;The person doesn't have the rank requiered;The person doesn't have the permission requiered;The person doesn't have the role requiered;;;14 - CCPulse;Framework 8.5 Routing & Reporting;142
+"What does the error ""Unsupported or invalid stat"" means in CCPulse ?";1;The stat type does not exists in the Stat Profil.cfg;The Stat Server make an error on the stat calculation;CCPulse can't reach the Stat Server;Config Server give wrong information;;14 - CCPulse;Framework 8.5 Routing & Reporting;143
+"What can be the cause to ""invalid path to storage"" in CCPulse ?";1;A path to the provided Stat Type is wrong;The Statprofil.cfg path is wrong;Path to the Config DB is wrong;;;14 - CCPulse;Framework 8.5 Routing & Reporting;144
+Why CCPulse+ needs a connection with the Config Server ?;2;To retrieve its configuration;To get user privileges;To retrieve historic report data;To support historic views;;14 - CCPulse;Framework 8.5 Routing & Reporting;145
+There is Roles in CCPulse+ ?;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;146
+In Legacy Storage type all tempaltes are in the same file;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;147
+Permissions allow to hide or show features in CCPulse ;1;False;True;;;;14 - CCPulse;Framework 8.5 Routing & Reporting;148
+In CCPulse+, what parameters are mandatory to set up automatic updates from Stat Server ?;2;Notification Mode ;Notification Frequency ;Statistical Type ;Interval Type ;;14 - CCPulse;Framework 8.5 Routing & Reporting;149
+In CCPulse+, what parameters are mandatory to set up automatic updates from Stat Server ?;2;Notification Frequency ;Insensitivity ;Statistical Type ;Interval Type ;;14 - CCPulse;Framework 8.5 Routing & Reporting;150
+Which option indicates to the SCS if it is the main SCS ?;1;distributed_rights;distributed_mode;mode;rights;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;151
+Load Distribution require a license;1;True;False;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;152
+What is recommanded by Genesys ;1;Have one Message Server per site;Have a global Message Server ;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;153
+Which option give the right rights for the Config Server Proxy ?;1;Environment\default;login as system;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;154
+Which option indicates to the SCS that the distributed mode is enabled ?;1;distributed_mode;mode;distributed;distributed_rights;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;155
+Which option of the [MessageServer] section is used to indicate to the Message Server that it will be used for SCS;1;signature;role;scs_distributed;mode;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;156
+The Config Server Proxy start with a cfg file;1;False;True;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;157
+The ISCC is installed after the T-Server installation;1;False;True;;;;15 - Multi-Host and Multi-Site;Framework 8.5 Routing & Reporting;158
+An ORS Cluster is composed of : ;1;ORS Nodes;1 ORS / 1 URS;Primary ORS / Backup ORS;;;16 - HA;Framework 8.5 Routing & Reporting;159
+How is Cassandra started ?;2;With Cassandra.bat;As a serivce;In Gax;With Cassandra.exe;;16 - HA;Framework 8.5 Routing & Reporting;160
+What can be in an ORS node ?;2;Primary ORS;Backup ORS;URS Backup;URS Primary;;16 - HA;Framework 8.5 Routing & Reporting;161
+Which files have to be configured to customize Cassandra ?;2;logback.xml;cassandra.yaml;cassandra.conf;changes.xml;;16 - HA;Framework 8.5 Routing & Reporting;162
+Which option of the ORS in scxml section has to be set to true to enable ORS working with Cassandra ?;1;persistance-default;cassandra-enable;cassandra-nodes;cassandra-listenport;;16 - HA;Framework 8.5 Routing & Reporting;163
+Which tab allow to configure the ADDP;1;Connections;Dependencies;Options;General;;16 - HA;Framework 8.5 Routing & Reporting;164
+Load balancing and high availability in an Orchestration deployment are addressed by providing multiple instances (servers) of Orchestration Servers (nodes) in a single logical entity called a Cluster;1;True;False;;;;16 - HA;Framework 8.5 Routing & Reporting;165
+What is stored in the Cassandra DB ?;3;SCXML Sessions;SCXML session Data;SCXML session State;SCXML session configuration;;16 - HA;Framework 8.5 Routing & Reporting;166
+How Many Nodes a cluster can contain ?;1;As many as we want;The same number of URS;;;;16 - HA;Framework 8.5 Routing & Reporting;167
+All nodes within a cluster must be connected to :;3;The same T/SIP Server;The Same URS;The same Apache Cassandra;The same Configuration Server;;16 - HA;Framework 8.5 Routing & Reporting;168
+When configuring the Hot Standby you have to specify the connection between the Primary component and the Backup component;1;False;True;;;;16 - HA;Framework 8.5 Routing & Reporting;169
+In an ORS Cluster, all ORS nodes have the same number of interactions;1;False;True;;;;16 - HA;Framework 8.5 Routing & Reporting;170

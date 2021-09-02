@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\SIMONV~1\AppData\Local\Temp\surefire14543289277567307270\surefirebooter10160358722064486164.jar C:\Users\SimonVigoureux\AppData\Local\Temp\surefire14543289277567307270 2021-06-28T12-44-46_872-jvmRun1 surefire4108385330678017183tmp surefire_0683586101251142061tmp"/>
+    <property name="sun.java.command" value="C:\Users\SIMONV~1\AppData\Local\Temp\surefire15336173451480306102\surefirebooter1617859870259104784.jar C:\Users\SimonVigoureux\AppData\Local\Temp\surefire15336173451480306102 2021-09-02T10-12-29_983-jvmRun1 surefire12844872200644704032tmp surefire_09377408950978488452tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\SimonVigoureux\Documents\VisualStudioCode\Maven\QuizSimon-1.2 - Excel\target\test-classes;C:\Users\SimonVigoureux\Documents\VisualStudioCode\Maven\QuizSimon-1.2 - Excel\target\classes;C:\Users\SimonVigoureux\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\SimonVigoureux\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SimonVigoureux\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\SimonVigoureux\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\SIMONV~1\AppData\Local\Temp\surefire14543289277567307270\surefirebooter10160358722064486164.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SIMONV~1\AppData\Local\Temp\surefire15336173451480306102\surefirebooter1617859870259104784.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>

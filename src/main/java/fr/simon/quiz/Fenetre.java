@@ -44,7 +44,7 @@ public class Fenetre extends JFrame implements MenuListener, ActionListener {
 
         // Afficher nombre de réponses
         afficherNombreReponses = new JCheckBoxMenuItem("Afficher le nombre de reponses");
-        afficherNombreReponses.setState(false);
+        afficherNombreReponses.setState(true);
         afficherNombreReponses.addActionListener(this);
         menuFichier.add(afficherNombreReponses);
 
@@ -80,6 +80,14 @@ public class Fenetre extends JFrame implements MenuListener, ActionListener {
      */
     public void updateContent(String numQuestion, List<Question> listeQuestions, int numeroQuesiton, String just) {
         cf.setTextNumQuestion(numQuestion);
+
+        /*for(int i = 0; i < listeQuestions.size(); i++) {
+            if(listeQuestions.get(i).getId() == numeroQuesiton) {
+                numeroQuesiton = i;
+                break;
+            }
+        }*/
+
         String ennonceQuestion = listeQuestions.get(numeroQuesiton).getQuestion();
         int nbreRep = listeQuestions.get(numeroQuesiton).getNbreReponses();
         

@@ -1,8 +1,9 @@
 package fr.simon.quiz;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
-import com.mysql.cj.xdevapi.Statement;
+//import com.mysql.cj.xdevapi.Statement;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +13,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.*;
+//import java.sql.*;
 import java.time.LocalDateTime;
 
 public class Quiz {
@@ -62,6 +63,31 @@ public class Quiz {
             System.out.println("Impossible de trouver le fichier CSV ! Vérfier que le chemin d'accès ou son nom est correct dans le fichier de config");
             System.exit(0);
         } 
+
+        HashMap<Integer, Integer> mapScoreRep = new HashMap<>();
+        HashMap<Integer, Integer> mapQuiz = new HashMap<>();
+        Map<Integer, Integer> mapQuestionsRepondues = new HashMap<>();
+        try {
+            Scanner lecteur;
+            File fichierTaux = new File(CheminProjet + "/Ressources/tauxBonnesReponses.txt");
+            lecteur = new Scanner(fichierTaux);
+
+            int iter = 0;
+            while(lecteur.hasNext()) {
+                String[] val = lecteur.nextLine().split(":");
+                mapScoreRep.put(++iter, Integer.parseInt(val[1]));
+            }
+
+            if(mapScoreRep.size() != listeQuestions.size()) {
+                int nbreTotalQuestions = listeQuestions.size();
+                for(int i = mapScoreRep.size() + 1; i < nbreTotalQuestions + 1; i++)
+                mapScoreRep.put(i, 0);
+            }
+
+            lecteur.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
 
         /*
          *   FENETRE LISTANT LES FORMATIONS 
@@ -208,12 +234,36 @@ public class Quiz {
         Collections.shuffle(listeQuestions);
         Fenetre ma_fenetre = new Fenetre(x, y);
 
+        for(int i = 0; i < listeQuestions.size(); i++) {
+            int idQest = listeQuestions.get(i).getId();
+            int scoreQuestion = mapScoreRep.get(idQest).intValue();
+            mapQuiz.put(idQest, scoreQuestion);
+        }
+
+        // Trier par ordre de valeur croissant
+        Map<Integer, Integer> mapQuizCroissant = mapQuiz.entrySet()
+                    .stream()
+                    .sorted(Map.Entry.comparingByValue())
+                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
         Chrono chrono = new Chrono();
         chrono.start();
 
-        for(int i = 0; i < nbreQuestions; i++) {
+        //for(int i = 0; i < nbreQuestions; i++) {
+        for(Map.Entry<Integer, Integer> quest : mapQuizCroissant.entrySet()) {
+            int i = quest.getKey(); // ID de la question
+            int rang = -1;
+            int scoreQuestion = quest.getValue();
+
+            for(int a = 0; a < listeQuestions.size(); a++) {
+                if(listeQuestions.get(a).getId() == i) {
+                    rang = a;
+                    break;
+                }
+            }
+
             ma_fenetre.unselectAllButtons();
-            ma_fenetre.updateContent( (++totalQuestions + " / " + nbreQuestions), listeQuestions, i, "");
+            ma_fenetre.updateContent( (++totalQuestions + " / " + nbreQuestions), listeQuestions, rang, "");
             
             while(ma_fenetre.getModeBouton() == -1) {
                 try {
@@ -222,8 +272,11 @@ public class Quiz {
                 }
             }
            
-            int pointQuestion = verifierReponses(ma_fenetre, listeQuestions, erreurs, i, ma_fenetre.getReponses());
-            String themeQuestion = listeQuestions.get(i).getTheme();
+            int pointQuestion = verifierReponses(ma_fenetre, listeQuestions, erreurs, rang, ma_fenetre.getReponses());
+            String themeQuestion = listeQuestions.get(rang).getTheme();
+
+            //mapQuizCroissant.put(i, scoreQuestion + pointQuestion);
+            mapQuestionsRepondues.put(i, scoreQuestion + pointQuestion);
 
             score += pointQuestion;
 
@@ -256,8 +309,13 @@ public class Quiz {
                 ma_fenetre.setTextValidation("Valider");
                 ma_fenetre.setModeBouton(-1);
             }
+
+            if(totalQuestions >= nbreQuestions)
+                break;
         }
         chrono.stop();
+
+        ecrireFichierTaux(majMapTaux(mapScoreRep, mapQuestionsRepondues));
 
         ma_fenetre.afficherScore((score * 100 / totalQuestions) + "%", chrono);
 
@@ -269,14 +327,15 @@ public class Quiz {
 
     /**
      * Fonction permettant de créer un objet question.
+     * @param id : ID de la question
      * @param liste : Indique la liste où l'objet Question sera ajouté
      * @param pQuestion : Ennoncé de la question
      * @param pReponse : Réponse de la question
      * @param pPropositions : Propositions pour le QCM
      * @param theme : Theme de la question
      */
-    public static void creerQuestion(List<Question> liste, int pNbreReponses, int somme, String pQuestion, List<String> pReponse, List<String> pPropositions, String ptheme, String pformation) {
-        liste.add(new Question(pQuestion, pNbreReponses, somme, pReponse, pPropositions, ptheme, pformation));
+    public static void creerQuestion(int id, List<Question> liste, int pNbreReponses, int somme, String pQuestion, List<String> pReponse, List<String> pPropositions, String ptheme, String pformation) {
+        liste.add(new Question(id, pQuestion, pNbreReponses, somme, pReponse, pPropositions, ptheme, pformation));
     }
 
     /**
@@ -352,16 +411,17 @@ public class Quiz {
                     val[6] : Justification
                     val[7] : Theme
                     val[8] : formation
+                    val[9] : id
                 */
 
                 /* if(Integer.parseInt(val[1]) > 1) 
                     val[0] += " (" + Integer.parseInt(val[1]) + " réponses)"; */
-                
+
                 // Récupérer les bonnes réponses
                 for(int i = 2; i < 2 + Integer.parseInt(val[1]); i++)
                     listeReponses.add(val[i]);
 
-                for(int i = 2; i < val.length - 2; i++) {
+                for(int i = 2; i < val.length - 3; i++) {
                     if(val[i] != "")
                         listePropositions.add(val[i]);
                 }
@@ -384,8 +444,20 @@ public class Quiz {
                     }
                 }
 
+                Question q = new Question();
+                q.setId(Integer.parseInt(val[9]));
+                q.setQuestion(val[0]);
+                q.setNbreReponses(Integer.parseInt(val[1]));
+                q.setReponse(listeReponses);
+                q.setSommeReponses(somme);
+                q.setProposition(listePropositions);
+                q.setJustification(val[6]);
+                q.setTheme(val[7]);
+                q.setFormation(val[8]);
+                liste.add(q);
+
                 //String theme = val[val.length - 1];
-                creerQuestion(liste, Integer.parseInt(val[1]), somme, val[0], listeReponses, listePropositions, val[7], val[8]);
+                //creerQuestion(Integer.parseInt(val[9]), liste, Integer.parseInt(val[1]), somme, val[0], listeReponses, listePropositions, val[7], val[8]);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -525,4 +597,44 @@ public class Quiz {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Fonction pour renseigner le taux de bonne réponse de chaque question
+     * @param mapTaux
+     */
+    public static void ecrireFichierTaux(Map<Integer, Integer> mapTaux) {
+        File fichierRecapitulatif = new File(cheminDossierCSV + "tauxBonnesReponses.txt");
+
+        if(!fichierRecapitulatif.exists()) {
+            try {
+                fichierRecapitulatif.createNewFile();
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        try {
+            FileWriter writer = new FileWriter(fichierRecapitulatif);
+            BufferedWriter bw = new BufferedWriter(writer);
+
+            for(Map.Entry<Integer, Integer> entry : mapTaux.entrySet()) {
+                String ligne = entry.getKey() + ":" + entry.getValue();
+                ecritureLigne(bw, ligne);
+            }
+
+            bw.close();
+            writer.close();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Map<Integer, Integer> majMapTaux(Map<Integer, Integer> mapInit, Map<Integer, Integer> mapQuiz) {
+        Map<Integer, Integer> mapFinale = mapInit;
+        for(Map.Entry<Integer, Integer> quest : mapQuiz.entrySet())
+            mapFinale.put(quest.getKey(), quest.getValue());
+        return mapFinale;
+    }
+
+
 }
